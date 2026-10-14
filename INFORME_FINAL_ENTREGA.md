@@ -111,3 +111,11 @@ Los seis repositorios cuentan con sus respectivos Pull Requests creados, revisad
   **SÍ, AL 100%.** Se cumplieron todas las historias de usuario, los 10 criterios de aceptación, las restricciones de no modificar el alcance, el uso de idioma en inglés para código y español para UI, la estructura de 3 ramas (`dev`, `qa`, `main`), las ramas hijas (`HU-001-*`), y los commits continuos en inglés.
 * **¿Qué nos falta cumplir?**  
   **NADA.** El proyecto está completamente construido, desplegado, documentado y sincronizado en GitHub antes de la hora límite (11:00 a. m.).
+
+
+### Matriz de Verificación en Caliente (Runtime)
+- **Base de Datos:** PostgreSQL 16 Alpine en `127.0.0.1:5432`, esquema `library`, 6 tablas relacionales con integridad referencial.
+- **Backend API:** Laravel 11 en `http://127.0.0.1:8000/api/v1` (JWT Auth, REST endpoints, salud verificada).
+- **Frontend SPA:** React 19 + Vite en `http://localhost:5173` (Catálogo, Préstamos, Devoluciones, Socios, Reportes).
+- **Herramienta CLI:** Node.js CLI en `test-manager-library-3145555-tool` sembrando datos y exportando reportes.
+- **Página Landing:** HTML5/CSS3/Vanilla JS en `test-manager-library-3145555-page`.
