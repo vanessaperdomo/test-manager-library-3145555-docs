@@ -71,3 +71,10 @@ En cualquiera de las dos carpetas, en este orden:
 | [`test-manager-library-3145555-page`](https://github.com/code-sena/test-manager-library-3145555-page) | Sitio público estático de presentación |
 | [`test-manager-library-3145555-infra`](https://github.com/code-sena/test-manager-library-3145555-infra) | Contenedores, red, volúmenes y motor de base de datos vacío |
 | [`test-manager-library-3145555-tool`](https://github.com/code-sena/test-manager-library-3145555-tool) | Utilidades: sembrador de datos de demostración |
+
+
+## Guía de Pruebas Rápidas para el Evaluador
+1. **Frontend:** Ingrese a `http://localhost:5173`.
+   - Usuario: `admin` | Clave: `admin123`
+   - Pruebe: Crear libro, crear socio, registrar préstamo, registrar devolución, ver préstamos en mora, ver reporte de libros más prestados.
+2. **API:** `http://127.0.0.1:8000/api/v1/health` (Estado: ok).
