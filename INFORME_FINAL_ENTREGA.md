@@ -27,13 +27,13 @@ Todos los repositorios cuentan con sus tres ramas padre (`dev`, `qa`, `main`) pl
 
 | Repositorio Fork en GitHub | Commits en `dev` | Commits en `qa` | Commits en `main` | Total Ramas | PR Oficial Fusionado |
 |---|:---:|:---:|:---:|:---:|---|
-| [`test-manager-library-3145555-docs`](https://github.com/vanessaperdomo/test-manager-library-3145555-docs) | 12 | 12 | 12 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-docs/pull/1) |
+| [`test-manager-library-3145555-docs`](https://github.com/vanessaperdomo/test-manager-library-3145555-docs) | 13 | 13 | 13 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-docs/pull/1) |
 | [`test-manager-library-3145555-infra`](https://github.com/vanessaperdomo/test-manager-library-3145555-infra) | 8 | 8 | 8 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-infra/pull/1) |
 | [`test-manager-library-3145555-api`](https://github.com/vanessaperdomo/test-manager-library-3145555-api) | 12 | 12 | 12 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-api/pull/1) |
-| [`test-manager-library-3145555-app`](https://github.com/vanessaperdomo/test-manager-library-3145555-app) | 17 | 17 | 17 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-app/pull/1) |
+| [`test-manager-library-3145555-app`](https://github.com/vanessaperdomo/test-manager-library-3145555-app) | 21 | 21 | 21 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-app/pull/1) |
 | [`test-manager-library-3145555-page`](https://github.com/vanessaperdomo/test-manager-library-3145555-page) | 8 | 8 | 8 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-page/pull/1) |
 | [`test-manager-library-3145555-tool`](https://github.com/vanessaperdomo/test-manager-library-3145555-tool) | 6 | 6 | 6 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-tool/pull/1) |
-| **TOTALES CONSOLIDADOS** | **63** | **63** | **63** | **198 ramas** | **6 PRs 100% Merged** |
+| **TOTALES CONSOLIDADOS** | **68** | **68** | **68** | **198 ramas** | **6 PRs 100% Merged** |
 
 ### Arquitectura de Navegación y Diseño Visual Frontend
 * **Sidebar Vertical Izquierdo:** Panel lateral sticky de 280px con identidad corporativa, selector de vistas seccionado (Operación General y Administración), badge de alerta para préstamos vencidos y perfil de usuario activo.
