@@ -16,7 +16,8 @@
 | **Idioma (Código en inglés, interfaz en español)** | ✅ CUMPLIDO | 100% | Artículo XI de constitución: variables, tablas y commits en inglés; UI en español. |
 | **Estrategia GitFlow (dev, qa, main y HU-001-*)** | ✅ CUMPLIDO | 100% | 33 ramas por repositorio desplegadas y sincronizadas en los 6 forks de GitHub. |
 | **Separación de Repositorios (6 Forks)** | ✅ CUMPLIDO | 100% | Todos los forks (`docs`, `infra`, `api`, `app`, `page`, `tool`) versionados independientemente. |
-| **Curva de Commits Progresivos (53 commits)** | ✅ CUMPLIDO | 100% | Commits atómicos en inglés con formato *Conventional Commits* en todas las ramas. |
+| **Curva de Commits Progresivos (64+ commits)** | ✅ CUMPLIDO | 100% | Commits atómicos en inglés con formato *Conventional Commits* en todas las ramas. |
+| **Diseño y Experiencia de Usuario (UI/UX)** | ✅ CUMPLIDO | 100% | Menú vertical lateral (Sidebar), iconografía SVG semántica, paleta Azul Eléctrico y Glassmorphism. |
 
 ---
 
@@ -26,13 +27,19 @@ Todos los repositorios cuentan con sus tres ramas padre (`dev`, `qa`, `main`) pl
 
 | Repositorio Fork en GitHub | Commits en `dev` | Commits en `qa` | Commits en `main` | Total Ramas | PR Oficial Fusionado |
 |---|:---:|:---:|:---:|:---:|---|
-| [`test-manager-library-3145555-docs`](https://github.com/vanessaperdomo/test-manager-library-3145555-docs) | 11 | 11 | 11 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-docs/pull/1) |
+| [`test-manager-library-3145555-docs`](https://github.com/vanessaperdomo/test-manager-library-3145555-docs) | 12 | 12 | 12 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-docs/pull/1) |
 | [`test-manager-library-3145555-infra`](https://github.com/vanessaperdomo/test-manager-library-3145555-infra) | 8 | 8 | 8 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-infra/pull/1) |
 | [`test-manager-library-3145555-api`](https://github.com/vanessaperdomo/test-manager-library-3145555-api) | 12 | 12 | 12 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-api/pull/1) |
-| [`test-manager-library-3145555-app`](https://github.com/vanessaperdomo/test-manager-library-3145555-app) | 10 | 10 | 10 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-app/pull/1) |
-| [`test-manager-library-3145555-page`](https://github.com/vanessaperdomo/test-manager-library-3145555-page) | 7 | 7 | 7 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-page/pull/1) |
+| [`test-manager-library-3145555-app`](https://github.com/vanessaperdomo/test-manager-library-3145555-app) | 17 | 17 | 17 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-app/pull/1) |
+| [`test-manager-library-3145555-page`](https://github.com/vanessaperdomo/test-manager-library-3145555-page) | 8 | 8 | 8 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-page/pull/1) |
 | [`test-manager-library-3145555-tool`](https://github.com/vanessaperdomo/test-manager-library-3145555-tool) | 6 | 6 | 6 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-tool/pull/1) |
-| **TOTALES CONSOLIDADOS** | **54** | **54** | **54** | **198 ramas** | **6 PRs 100% Merged** |
+| **TOTALES CONSOLIDADOS** | **63** | **63** | **63** | **198 ramas** | **6 PRs 100% Merged** |
+
+### Arquitectura de Navegación y Diseño Visual Frontend
+* **Sidebar Vertical Izquierdo:** Panel lateral sticky de 280px con identidad corporativa, selector de vistas seccionado (Operación General y Administración), badge de alerta para préstamos vencidos y perfil de usuario activo.
+* **TopBar & Breadcrumbs:** Barra superior con migas de pan contextuales, descripción de la vista activa e indicador visual de conectividad API en tiempo real (`API 8000 Conectada`).
+* **Iconografía SVG Semántica:** Sustitución total de emojis por iconos vectoriales SVG de 2px de trazo estilo Lucide (`IconBook`, `IconUsers`, `IconBarChart`, `IconSearch`, `IconPlus`, etc.).
+* **Paleta Azul Eléctrico y Dark Glassmorphism:** Color primario azul `#2563eb`, tarjetas translúcidas con `backdrop-filter: blur(12px)` y contraste optimizado para lectura técnica.
 
 ---
 
