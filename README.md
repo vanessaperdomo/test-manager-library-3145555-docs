@@ -40,13 +40,15 @@ No hay prórroga: suban avances parciales con commits pequeños durante la prueb
 
 ## Qué contiene este repositorio
 
-| Carpeta | Contenido |
+| Carpeta / Archivo | Contenido |
 |---|---|
-| [`spec-python/`](spec-python/) | El spec de Manager Library escrito para un backend Python |
-| [`spec-.net/`](spec-.net/) | El mismo sistema especificado para un backend .NET |
+| [`spec-laravel-react/`](spec-laravel-react/) | **El spec oficial del reto adaptado a PHP (Laravel) y React** |
+| [`technical-debt.md`](technical-debt.md) | **Registro de Deuda Técnica e Inconsistencias identificadas en SDD** |
+| [`spec-python/`](spec-python/) | El spec de Manager Library escrito para un backend Python (referencia) |
+| [`spec-.net/`](spec-.net/) | El mismo sistema especificado para un backend .NET (referencia) |
 
-Las dos versiones describen el **mismo producto** (las mismas historias, reglas de negocio y
-endpoints); cambian las decisiones de tecnología. Ninguna de las dos es el stack del reto.
+Las especificaciones describen el **mismo producto** (las mismas historias, reglas de negocio y
+endpoints). La carpeta `spec-laravel-react/` contiene la arquitectura, constitución, tareas y plan específicos para la implementación en React + Laravel.
 
 ## Cómo se lee el spec
 
