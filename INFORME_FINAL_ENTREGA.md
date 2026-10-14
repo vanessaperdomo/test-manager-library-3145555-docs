@@ -25,32 +25,37 @@ A continuación se detalla la trazabilidad y estado de los 6 repositorios forkea
 
 ### 1. `test-manager-library-3145555-docs`
 * **Propósito:** Especificación técnica del reto adaptada a Laravel + React, bitácora de deuda técnica y registros de decisiones arquitectónicas (ADRs).
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-main`, `HU-001-qa`, `HU-001-dev`, `docs/sdd-laravel-react-and-fixes`.
+* **Ramas activas:** `main`, `qa`, `dev`, y las ramas hijas de historias de usuario: `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
 * **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
 
 ### 2. `test-manager-library-3145555-infra`
 * **Propósito:** Contenedor de base de datos PostgreSQL 16 Alpine, red Docker interna aislada `manager-library-net` y script de inicialización del esquema `library`.
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-main`, `HU-001-qa`, `HU-001-dev`, `infra/docker-postgresql-setup`.
+* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
+* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
 * **Estado en tiempo de ejecución:** Contenedor `manager-library-postgres` saludable en puerto `5432:5432`.
 
 ### 3. `test-manager-library-3145555-api`
 * **Propósito:** API RESTful en PHP 8.2 (Laravel 11) con autenticación JWT HMAC-SHA256, roles RBAC (Admin y Librarian), migraciones DDL, seeders y transacciones ACID.
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-main`, `HU-001-qa`, `HU-001-dev`, `feature/api-laravel-core`.
+* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
+* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
 * **Endpoints:** Verificados 100% con pruebas de integración HTTP (Health, Login, Users, Categories, Books, Members, Loans, Returns, Overdue, Reports).
 
 ### 4. `test-manager-library-3145555-app`
 * **Propósito:** Frontend SPA en React 18 con Vite, Context API, diseño Glassmorphism en CSS puro, catálogo con portadas, registro de préstamos y devoluciones.
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-main`, `HU-001-qa`, `HU-001-dev`, `feature/app-react-frontend`.
+* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
+* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
 * **Compilación:** `npm run build` ejecutado y probado con 0 errores (distribuible optimizado).
 
 ### 5. `test-manager-library-3145555-page`
 * **Propósito:** Sitio público estático de presentación del proyecto, arquitectura SDD, matriz de criterios y modelo GitFlow.
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-main`, `HU-001-qa`, `HU-001-dev`, `feature/landing-presentation`.
+* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
+* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
 * **Tecnología:** HTML5 semántico, CSS3 moderno con modo oscuro y JavaScript vanilla.
 
 ### 6. `test-manager-library-3145555-tool`
 * **Propósito:** CLI Seeder de datos de demostración en Node.js que autentica contra la API y siembra datos realistas.
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-main`, `HU-001-qa`, `HU-001-dev`, `feature/demo-seeder-cli`.
+* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
+* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
 * **Ejecución:** Sembró 5 categorías, 6 libros, 5 socios y préstamos activos/devueltos con éxito.
 
 ---
