@@ -81,22 +81,22 @@ A continuación se detalla la trazabilidad y estado de los 6 repositorios forkea
 
 ---
 
-## 5. Trazabilidad GitFlow y Enlaces de Pull Request
+## 5. Trazabilidad GitFlow y Enlaces de Pull Requests Oficiales Fusionados
 
-Todos los repositorios cuentan con su historial de desarrollo ramificado:
+Los seis repositorios cuentan con sus respectivos Pull Requests creados, revisados y fusionados (estado **Merged** 🟣) en GitHub:
 
 * **test-manager-library-3145555-docs:**
   * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-docs/pull/1
 * **test-manager-library-3145555-infra:**
-  * Comparar dev con HU-001-dev: https://github.com/vanessaperdomo/test-manager-library-3145555-infra/compare/dev...HU-001-dev?expand=1
+  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-infra/pull/1
 * **test-manager-library-3145555-api:**
-  * Comparar dev con HU-001-dev: https://github.com/vanessaperdomo/test-manager-library-3145555-api/compare/dev...HU-001-dev?expand=1
+  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-api/pull/1
 * **test-manager-library-3145555-app:**
-  * Comparar dev con HU-001-dev: https://github.com/vanessaperdomo/test-manager-library-3145555-app/compare/dev...HU-001-dev?expand=1
+  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-app/pull/1
 * **test-manager-library-3145555-page:**
-  * Comparar dev con HU-001-dev: https://github.com/vanessaperdomo/test-manager-library-3145555-page/compare/dev...HU-001-dev?expand=1
+  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-page/pull/1
 * **test-manager-library-3145555-tool:**
-  * Comparar dev con HU-001-dev: https://github.com/vanessaperdomo/test-manager-library-3145555-tool/compare/dev...HU-001-dev?expand=1
+  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-tool/pull/1
 
 ---
 
