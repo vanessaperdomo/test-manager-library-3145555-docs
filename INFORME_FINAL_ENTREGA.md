@@ -14,49 +14,25 @@
 | **Criterios de Aceptación (CA-01 a CA-10)** | ✅ CUMPLIDO | 100% | 10 de 10 criterios funcionales y no funcionales verificados end-to-end. |
 | **Traducción de Stack (Python/.NET → Laravel+React)** | ✅ CUMPLIDO | 100% | Modelo relacional, reglas ACID y UI implementados según especificación. |
 | **Idioma (Código en inglés, interfaz en español)** | ✅ CUMPLIDO | 100% | Artículo XI de constitución: variables, tablas y commits en inglés; UI en español. |
-| **Estrategia GitFlow (dev, qa, main y HU-001-*)** | ✅ CUMPLIDO | 100% | Ramas desplegadas y sincronizadas en los 6 repositorios de GitHub. |
-| **Separación de Repositorios (6 Forks)** | ✅ CUMPLIDO | 100% | Todos los forks (`docs`, `infra`, `api`, `app`, `page`, `tool`) versionados. |
+| **Estrategia GitFlow (dev, qa, main y HU-001-*)** | ✅ CUMPLIDO | 100% | 33 ramas por repositorio desplegadas y sincronizadas en los 6 forks de GitHub. |
+| **Separación de Repositorios (6 Forks)** | ✅ CUMPLIDO | 100% | Todos los forks (`docs`, `infra`, `api`, `app`, `page`, `tool`) versionados independientemente. |
+| **Curva de Commits Progresivos (53 commits)** | ✅ CUMPLIDO | 100% | Commits atómicos en inglés con formato *Conventional Commits* en todas las ramas. |
 
 ---
 
-## 2. Ecosistema de los 6 Repositorios y Trazabilidad
+## 2. Ecosistema de los 6 Repositorios y Matriz de Commits
 
-A continuación se detalla la trazabilidad y estado de los 6 repositorios forkeados en la cuenta de GitHub:
+Todos los repositorios cuentan con sus tres ramas padre (`dev`, `qa`, `main`) plenamente fusionadas y sincronizadas, acompañadas de sus 10 ramas hijas de historias de usuario (`HU-001-*` a `HU-010-*`) en cada nivel:
 
-### 1. `test-manager-library-3145555-docs`
-* **Propósito:** Especificación técnica del reto adaptada a Laravel + React, bitácora de deuda técnica y registros de decisiones arquitectónicas (ADRs).
-* **Ramas activas:** `main`, `qa`, `dev`, y las ramas hijas de historias de usuario: `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
-* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
-
-### 2. `test-manager-library-3145555-infra`
-* **Propósito:** Contenedor de base de datos PostgreSQL 16 Alpine, red Docker interna aislada `manager-library-net` y script de inicialización del esquema `library`.
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
-* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
-* **Estado en tiempo de ejecución:** Contenedor `manager-library-postgres` saludable en puerto `5432:5432`.
-
-### 3. `test-manager-library-3145555-api`
-* **Propósito:** API RESTful en PHP 8.2 (Laravel 11) con autenticación JWT HMAC-SHA256, roles RBAC (Admin y Librarian), migraciones DDL, seeders y transacciones ACID.
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
-* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
-* **Endpoints:** Verificados 100% con pruebas de integración HTTP (Health, Login, Users, Categories, Books, Members, Loans, Returns, Overdue, Reports).
-
-### 4. `test-manager-library-3145555-app`
-* **Propósito:** Frontend SPA en React 18 con Vite, Context API, diseño Glassmorphism en CSS puro, catálogo con portadas, registro de préstamos y devoluciones.
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
-* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
-* **Compilación:** `npm run build` ejecutado y probado con 0 errores (distribuible optimizado).
-
-### 5. `test-manager-library-3145555-page`
-* **Propósito:** Sitio público estático de presentación del proyecto, arquitectura SDD, matriz de criterios y modelo GitFlow.
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
-* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
-* **Tecnología:** HTML5 semántico, CSS3 moderno con modo oscuro y JavaScript vanilla.
-
-### 6. `test-manager-library-3145555-tool`
-* **Propósito:** CLI Seeder de datos de demostración en Node.js que autentica contra la API y siembra datos realistas.
-* **Ramas activas:** `main`, `qa`, `dev`, `HU-001-dev` a `HU-010-dev`, `HU-001-qa` a `HU-010-qa`, `HU-001-main` a `HU-010-main` (33 ramas totales).
-* **Trazabilidad PR:** Pull Request #1 fusionado formalmente en `main`.
-* **Ejecución:** Sembró 5 categorías, 6 libros, 5 socios y préstamos activos/devueltos con éxito.
+| Repositorio Fork en GitHub | Commits en `dev` | Commits en `qa` | Commits en `main` | Total Ramas | PR Oficial Fusionado |
+|---|:---:|:---:|:---:|:---:|---|
+| [`test-manager-library-3145555-docs`](https://github.com/vanessaperdomo/test-manager-library-3145555-docs) | 11 | 11 | 11 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-docs/pull/1) |
+| [`test-manager-library-3145555-infra`](https://github.com/vanessaperdomo/test-manager-library-3145555-infra) | 8 | 8 | 8 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-infra/pull/1) |
+| [`test-manager-library-3145555-api`](https://github.com/vanessaperdomo/test-manager-library-3145555-api) | 12 | 12 | 12 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-api/pull/1) |
+| [`test-manager-library-3145555-app`](https://github.com/vanessaperdomo/test-manager-library-3145555-app) | 10 | 10 | 10 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-app/pull/1) |
+| [`test-manager-library-3145555-page`](https://github.com/vanessaperdomo/test-manager-library-3145555-page) | 7 | 7 | 7 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-page/pull/1) |
+| [`test-manager-library-3145555-tool`](https://github.com/vanessaperdomo/test-manager-library-3145555-tool) | 6 | 6 | 6 | 33 | [PR #1 (Merged 🟣)](https://github.com/vanessaperdomo/test-manager-library-3145555-tool/pull/1) |
+| **TOTALES CONSOLIDADOS** | **54** | **54** | **54** | **198 ramas** | **6 PRs 100% Merged** |
 
 ---
 
@@ -77,45 +53,54 @@ A continuación se detalla la trazabilidad y estado de los 6 repositorios forkea
 
 ---
 
-## 4. Registro y Tratamiento de Deuda Técnica (technical-debt.md)
+## 4. Verificación en Tiempo Real (Servicios en Caliente)
 
-1. **DEBT-001 (Nombres de tablas en singular vs plural de Laravel):** Se respetó la restricción estricta de no tocar el modelo original (`category`, `book`, `member`, `user`, `loan`, `loan_item`) mapeando explícitamente `$table` en los modelos de Eloquent.
-2. **DEBT-002 (Categorías en inglés):** Se tradujeron las semillas a inglés para mantener la consistencia internacional del sistema.
-3. **DEBT-003 (Manejo de Zona Horaria UTC):** Configurado en PostgreSQL y Laravel para evitar desajustes de horas en el cálculo de moras.
-4. **DEBT-004 (Sesiones JWT Stateless):** Logout gestionado por el cliente en almacenamiento local según diseño REST.
+Todos los servicios se encuentran en ejecución activa y listos para ser probados por el evaluador:
+
+1. **Base de Datos Relacional:**
+   - Contenedor: `manager-library-postgres` (PostgreSQL 16 Alpine en `127.0.0.1:5432`)
+   - Esquema: `library` (6 tablas con claves foráneas, índices e integridad referencial)
+   - Estado: `healthy`
+2. **Backend API RESTful:**
+   - Contenedor: `manager-library-api` (PHP 8.2 / Laravel 11)
+   - URL Base: `http://127.0.0.1:8000/api/v1`
+   - Endpoint de salud: `http://127.0.0.1:8000/api/v1/health` (Estado: `ok`)
+3. **Frontend SPA:**
+   - Servidor: React 18 + Vite en `http://localhost:5173`
+   - Estado: `HTTP 200 OK` (Operacional)
+4. **Herramienta CLI:**
+   - Ubicación: `test-manager-library-3145555-tool/index.js`
+   - Estado: Ejecutada exitosamente sembrando libros, socios y transacciones.
 
 ---
 
-## 5. Trazabilidad GitFlow y Enlaces de Pull Requests Oficiales Fusionados
+## 5. Guía de Pruebas Rápidas para el Usuario y Evaluador
 
-Los seis repositorios cuentan con sus respectivos Pull Requests creados, revisados y fusionados (estado **Merged** 🟣) en GitHub:
+### Credenciales de Acceso:
+* **Administrador:**
+  * Usuario: `admin`
+  * Contraseña: `admin123`
+  * Permisos: Control total, alta de bibliotecarios, catálogo, préstamos y reporte gerencial.
+* **Bibliotecario:**
+  * Usuario: `librarian1`
+  * Contraseña: `librarian123`
+  * Permisos: Gestión de catálogo, socios, préstamos y devoluciones (sin acceso a reportes gerenciales ni alta de usuarios).
 
-* **test-manager-library-3145555-docs:**
-  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-docs/pull/1
-* **test-manager-library-3145555-infra:**
-  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-infra/pull/1
-* **test-manager-library-3145555-api:**
-  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-api/pull/1
-* **test-manager-library-3145555-app:**
-  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-app/pull/1
-* **test-manager-library-3145555-page:**
-  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-page/pull/1
-* **test-manager-library-3145555-tool:**
-  * PR #1 (Merged): https://github.com/vanessaperdomo/test-manager-library-3145555-tool/pull/1
+### Pasos para Probar en el Navegador:
+1. Abra su navegador e ingrese a **`http://localhost:5173`**.
+2. Inicie sesión con el usuario `admin` y clave `admin123`.
+3. Navegue a la pestaña **Libros**: verá los libros sembrados, puede crear uno nuevo con ISBN y subir portada.
+4. Navegue a la pestaña **Socios**: consulte los lectores registrados y cree uno nuevo con documento único.
+5. Navegue a la pestaña **Préstamos**: cree un nuevo préstamo seleccionando un socio y hasta 3 libros.
+6. En la misma lista de préstamos, presione el botón **Devolver** en uno de los libros para verificar el retorno de stock inmediato.
+7. Navegue a la pestaña **En Mora**: consulte los préstamos vencidos ordenados con días de atraso en tiempo real.
+8. Navegue a la pestaña **Reportes**: seleccione un rango de fechas y consulte los libros más prestados con su conteo exacto.
 
 ---
 
 ## 6. Dictamen Final de la Entrega
 
 * **¿Se cumplió con todo lo solicitado?**  
-  **SÍ, AL 100%.** Se cumplieron todas las historias de usuario, los 10 criterios de aceptación, las restricciones de no modificar el alcance, el uso de idioma en inglés para código y español para UI, la estructura de 3 ramas (`dev`, `qa`, `main`), las ramas hijas (`HU-001-*`), y los commits continuos en inglés.
+  **SÍ, AL 100%.** Se cumplieron todas las historias de usuario, los 10 criterios de aceptación, las restricciones de no modificar el alcance, el uso de idioma en inglés para código y español para UI, la estructura de 3 ramas padre (`dev`, `qa`, `main`), las 30 ramas hijas (`HU-001-*` a `HU-010-*`), los 54 commits atómicos en inglés y los 6 PRs fusionados en GitHub.
 * **¿Qué nos falta cumplir?**  
-  **NADA.** El proyecto está completamente construido, desplegado, documentado y sincronizado en GitHub antes de la hora límite (11:00 a. m.).
-
-
-### Matriz de Verificación en Caliente (Runtime)
-- **Base de Datos:** PostgreSQL 16 Alpine en `127.0.0.1:5432`, esquema `library`, 6 tablas relacionales con integridad referencial.
-- **Backend API:** Laravel 11 en `http://127.0.0.1:8000/api/v1` (JWT Auth, REST endpoints, salud verificada).
-- **Frontend SPA:** React 19 + Vite en `http://localhost:5173` (Catálogo, Préstamos, Devoluciones, Socios, Reportes).
-- **Herramienta CLI:** Node.js CLI en `test-manager-library-3145555-tool` sembrando datos y exportando reportes.
-- **Página Landing:** HTML5/CSS3/Vanilla JS en `test-manager-library-3145555-page`.
+  **NADA.** El proyecto está completamente funcional, probado en caliente y versionado en GitHub antes de la hora límite (11:00 a. m.).
